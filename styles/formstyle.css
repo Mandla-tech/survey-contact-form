@@ -1,0 +1,65 @@
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 40px 20px;
+    margin: auto;
+}
+
+input:focus{
+background-color: lightcyan;
+}
+
+label{
+    width: 150px;
+    display: inline-block
+}
+
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 0px;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+h1{
+    padding-left: 40px ;
+    color: lightslategrey;
+}
+
+legend{
+font-weight: 650;
+}
+
+.form_group {
+    padding-bottom: 10px;
+}
+
+.comments_area{
+    padding: 10px 0;
+}
+
+.sub_date{
+    padding: 10px 0 10px;
+}
+
+.signup label{
+    padding: 10px 0 10px;
+    width: 210px;
+    display: inline-block
+}
+
+.button{
+    margin: 10px;
+}
+
+.button:hover {
+    background-color:lightcyan;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 4px 4px;
+    font-weight: 100;
+}
