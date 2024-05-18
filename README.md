@@ -21,10 +21,15 @@ This project is a basic contact form designed to conduct a survey among students
 **Features**
 
 #Basic Information: Collects basic user information such as name and email.
+
 #Dropdown Menu: Allows users to select their favorite programming language from a list.
+
 #Radio Buttons: Enables users to choose specific options related to the survey.
+
 #Additional Information: Users can input extra comments and the current date.
+
 #Checkboxes: Users can sign up for the newsletter and agree to the terms and conditions.
+
 
 **Technologies Used**
 
