@@ -9,82 +9,93 @@
     <link rel="stylesheet" type="text/css" href="../styles/formstyle.css">
 </head>
 <body>
-<main>
-    <h1>Faculty Fav Languages Survey</h1>
-</main>
+<div class="container">
+  <div class="content">
+    <!-- The "main" tag is used to specify the main content of the document. -->
+    <main>
+        <h1>Faculty Fav Languages Survey</h1>
+    </main>
+    <!-- The "form" tag is used to create an HTML form for user input.-->
+    <form action=" " method="post">
+    <fieldset>
+      <!-- The "legend" tag defines a caption for the "fieldset" element. -->
+        <legend>Add User</legend>
+        <!-- Section for collecting personal information -->
+        <section class="info">
+        <div class="form_group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="first_name">
+          </div>
 
-<form action=" " method="post">
-<fieldset>
-    <legend>Add User</legend>
+          <div class="form_group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="last_name">
+          </div>
 
-    <section class="info">
-    <div class="form_group">
-        <label for="firstName">First name</label>
-        <input type="text" id="firstName" name="first_name">
-      </div>
+          <div class="form_group">
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email_address">
+          </div>
 
-      <div class="form_group">
-        <label for="lastName">Last name</label>
-        <input type="text" id="lastName" name="last_name">
-      </div>
+          <div class="form_group">
+            <label for="status">Status</label>
+            <select id="status" name="user_status">
+                <option class="placeholder" disabled selected>Select an option</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+            </select>
+          </div>
+        </section>
+          <!-- This "div" tag is used to create a section for selecting a favorite language. -->
+          <div>
+            <p>Choose your favorite language:</p>
+            <label for="javascript">JavaScript</label>
+            <input type="radio" id="javascript" name="language"><br>
 
-      <div class="form_group">
-        <label for="email">Email </label>
-        <input type="email" id="email" name="email_address">
-      </div>
+            <label for="python">Python</label>
+            <input type="radio" id="python" name="language"><br>
 
-      <div class="form_group">
-        <label for="status">Status</label>
-        <select id="status" name="user_status">
-            <option class="placeholder" disabled selected>Select an option</option>
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-            <option value="guest">Guest</option>
-        </select>
-      </div>
-    </section>
+            <label for="java">Java</label>
+            <input type="radio" id="java" name="language"><br>
 
-      <div>
-        <p>Choose your favorite language:</p>
-        <label for="javascript">JavaScript</label>
-        <input type="radio" id="javascript" name="language"><br>
+            <label for="html">HTML</label>
+            <input type="radio" id="html" name="language"><br>
 
-        <label for="python">Python</label>
-        <input type="radio" id="python" name="language"><br>
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="language">
+          </div>
+          <!-- This "div" tag with class "comments_area" is used to create a section for the user to enter comments. -->
+          <div class="comments_area">
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments" placeholder="Share your thoughts.."></textarea>
+          </div>
+          <!-- Section for selecting submission date -->
+          <div class="sub_date">
+            <label for="date">Submission date</label>
+            <input type="date" id="date" name="submission_date">
+          </div>
+          <!-- Section for additional options like newsletter sign-up and terms agreement -->
+          <div class="signup">
+            <label for="newsletter">Sign up for newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter"><br>
+            <label for="terms">Agree to terms and conditions</label>
+            <input type="checkbox" id="terms" name="terms_and_conditions">
+          </div>
 
-        <label for="java">Java</label>
-        <input type="radio" id="java" name="language"><br>
+          <!-- The "button" tag defines a clickable button. -->
+          <button class="button">Submit</button>
 
-        <label for="html">HTML</label>
-        <input type="radio" id="html" name="language"><br>
+    </fieldset>
+    </form>
 
-        <label for="css">CSS</label>
-        <input type="radio" id="css" name="language">
-      </div>
-
-      <div class="comments_area">
-        <label for="comments">Comments</label><br>
-        <textarea id="comments" name="comments" placeholder="Share your thoughts.."></textarea>
-      </div>
-
-      <div class="sub_date">
-        <label for="date">Submission date</label>
-        <input type="date" id="date" name="submission_date">
-      </div>
-
-      <div class="signup">
-        <label for="newsletter">Sign up for newsletter</label>
-        <input type="checkbox" id="newsletter" name="newsletter"><br>
-        <label for="terms">Agree to terms and conditions</label>
-        <input type="checkbox" id="terms" name="terms_and_conditions">
-      </div>
-
-
-      <button class="button">Submit</button>
-
-</fieldset>
-</form>
-
-
+    <div class="attribution">
+      <br>
+      Coded by <a href="#">Mandla M</a>.
+    </div>
+  </div>
+</div>
+<!-- Link to an external JavaScript file for additional functionality -->
+<script src="../scripts/formscript.js"></script>
 </body>
 </html>

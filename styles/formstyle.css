@@ -1,41 +1,63 @@
+/* Styling for the entire form */
 form{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
     padding: 20px 40px 20px;
-    margin: auto;
+    margin: auto; /* Center the form horizontally */
 }
 
+/* Styling for the body */
+body {
+    background-color: lightgrey; /* This line sets the background color of the body to light grey. */
+    display: flex; /* This line sets the display property to flex, enabling the flexible box layout. */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the main container */
+.container {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* This line prevents the content from spilling out of the container. */
+    width: 95%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Styling for focused input fields */
 input:focus{
-background-color: lightcyan;
+background-color: lightcyan; /* Change background color when use clicks to add details on input field*/
 }
 
+/* Styling for labels */
 label{
     width: 150px;
     display: inline-block
 }
 
+/* Styling for textareas */
 textarea {
     font-family: inherit;
     font-size: 100%;
     padding: 5px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     margin-left: 0px;
 }
 
-body {
-    background-color: lightgrey;
-}
-
+/* Styling for main heading */
 h1{
-    padding-left: 40px ;
+    text-align: center;
     color: lightslategrey;
 }
 
 legend{
-font-weight: 650;
+font-weight: 650; /* Set font weight for the form legend*/
 }
 
+/* Styling for form groups */
 .form_group {
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* This line adds padding to the bottom of the form group. */
 }
 
 .comments_area{
@@ -56,10 +78,15 @@ font-weight: 650;
     margin: 10px;
 }
 
+/* Styling for hover effect on submit button */
 .button:hover {
     background-color:lightcyan;
     border-radius: 6px;
     cursor: pointer;
     padding: 4px 4px;
     font-weight: 100;
+}
+
+.attribution{
+    text-align: center;
 }
