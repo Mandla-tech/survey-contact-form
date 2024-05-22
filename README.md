@@ -34,7 +34,9 @@ This project is a basic contact form designed to conduct a survey among students
 **Technologies Used**
 
 HTML: For creating the structure of the form.
+
 CSS: For styling the form and ensuring a user-friendly interface.
+
 JavaScript: For any client-side validation and dynamic behavior.
 
 **Installation**
@@ -55,5 +57,4 @@ Contributions are welcome!
 
 **Screenshot**
 
-![surveyContactForm](https://github.com/Mandla-tech/survey-contact-form/assets/122727482/db4c0daa-6802-48a5-84f0-9ab77ccda635)
-
+![surveyContactForm](screenshot/Screenshot-%20surveyForm.png)
